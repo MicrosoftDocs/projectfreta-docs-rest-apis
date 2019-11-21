@@ -1,0 +1,17 @@
+{
+  "RecommendationMetadata/Get.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "RecommendationMetadata/List.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Configurations/CreateInResourceGroup.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Configurations/CreateInSubscription.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Configurations/ListByResourceGroup.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Configurations/ListBySubscription.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Recommendations/Generate.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Recommendations/Get.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Recommendations/GetGenerateStatus.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Recommendations/List.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Operations/List.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Suppressions/Create.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Suppressions/Delete.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Suppressions/Get.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1",
+  "Suppressions/List.yml": "https://github.com/azure/azure-rest-api-specs/blob/master/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json#L1"
+}

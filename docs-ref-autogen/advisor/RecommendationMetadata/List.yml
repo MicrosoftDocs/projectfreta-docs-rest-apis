@@ -1,0 +1,180 @@
+### YamlMime:RESTOperation
+uid: management.azure.com.advisor.recommendationmetadata.list
+name: List
+service: Advisor
+groupName: Recommendation Metadata
+apiVersion: 2017-04-19
+summary: Gets the list of metadata entities.
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+- content: GET https://management.azure.com/providers/Microsoft.Advisor/metadata?api-version=2017-04-19
+uriParameters:
+- name: api-version
+  in: query
+  isRequired: true
+  description: The version of the API to be used with the client request.
+  types:
+  - uid: string
+responses:
+- name: 200 OK
+  description: OK. Successfully retrieved metadata entities
+  types:
+  - uid: MetadataEntityListResult
+requestHeader: []
+definitions:
+- name: MetadataEntityListResult
+  description: The list of metadata entities
+  kind: object
+  properties:
+  - name: value
+    description: The list of metadata entities.
+    types:
+    - uid: MetadataEntity
+      isArray: true
+  - name: nextLink
+    description: The link used to get the next page of metadata.
+    types:
+    - uid: string
+- name: MetadataEntity
+  description: The metadata entity contract.
+  kind: object
+  properties:
+  - name: id
+    description: The resource Id of the metadata entity.
+    types:
+    - uid: string
+  - name: type
+    description: The type of the metadata entity.
+    types:
+    - uid: string
+  - name: name
+    description: The name of the metadata entity.
+    types:
+    - uid: string
+  - name: properties.displayName
+    description: The display name.
+    types:
+    - uid: string
+  - name: properties.dependsOn
+    description: The list of keys on which this entity depends on.
+    types:
+    - uid: string
+      isArray: true
+  - name: properties.applicableScenarios
+    description: The list of scenarios applicable to this metadata entity.
+    types:
+    - uid: string
+      isArray: true
+  - name: properties.supportedValues
+    description: The list of supported values.
+    types:
+    - uid: MetadataSupportedValueDetail
+      isArray: true
+- name: MetadataSupportedValueDetail
+  description: The metadata supported value detail.
+  kind: object
+  properties:
+  - name: id
+    description: The id.
+    types:
+    - uid: string
+  - name: displayName
+    description: The display name.
+    types:
+    - uid: string
+examples:
+- name: GetMetadata
+  request:
+    uri: GET https://management.azure.com/providers/Microsoft.Advisor/metadata?api-version=2017-04-19
+  responses:
+  - statusCode: "200"
+    body: >-
+      {
+        "nextLink": "string",
+        "value": [
+          {
+            "id": "providers/Microsoft.Advisor/metadata/recommendationType",
+            "name": "recommendationType",
+            "type": "Microsoft.Advisor/metadata",
+            "properties": {
+              "displayName": "Recommendation Type",
+              "dependsOn": [
+                "category",
+                "impact"
+              ],
+              "applicableScenarios": [
+                "Alerts"
+              ],
+              "supportedValues": [
+                {
+                  "id": "6a2b1e70-bd4c-4163-86de-5243d7ac05ee",
+                  "displayName": "Upgrade your SKU or add more instances to ensure fault tolerance"
+                },
+                {
+                  "id": "da6630fb-4286-4996-92a3-a43f5f26dd34",
+                  "displayName": "Delete ExpressRoute circuits in the provider status of Not Provisioned"
+                }
+              ]
+            }
+          },
+          {
+            "id": "providers/Microsoft.Advisor/metadata/recommendationCategory",
+            "name": "recommendationCategory",
+            "type": "Microsoft.Advisor/metadata",
+            "properties": {
+              "displayName": "Category",
+              "dependsOn": null,
+              "applicableScenarios": [
+                "Alerts"
+              ],
+              "supportedValues": [
+                {
+                  "id": "Cost",
+                  "displayName": "Cost"
+                },
+                {
+                  "id": "Performance",
+                  "displayName": "Performance"
+                }
+              ]
+            }
+          },
+          {
+            "id": "providers/Microsoft.Advisor/metadata/recommendationImpact",
+            "name": "recommendationImpact",
+            "type": "Microsoft.Advisor/metadata",
+            "properties": {
+              "displayName": "Impact",
+              "dependsOn": null,
+              "applicableScenarios": null,
+              "supportedValues": [
+                {
+                  "id": "High",
+                  "displayName": "High"
+                },
+                {
+                  "id": "Medium",
+                  "displayName": "Medium"
+                },
+                {
+                  "id": "Low",
+                  "displayName": "Low"
+                }
+              ]
+            }
+          }
+        ]
+      }
+security:
+- name: azure_auth
+  type: oauth2
+  description: Azure Active Directory OAuth2 Flow.
+  flow: implicit
+  authorizationUrl: https://login.microsoftonline.com/common/oauth2/authorize
+  scopes:
+  - name: user_impersonation
+    description: impersonate your user account
+errorCodes: []
