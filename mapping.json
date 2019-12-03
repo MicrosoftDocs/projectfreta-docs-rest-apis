@@ -10,13 +10,13 @@
       "default_toc_title": "Getting Started with REST",
     "services": [
 	{
-          "toc_title": "Advisor",
-          "url_group": "advisor",
-          "service_index": "docs-ref-conceptual/advisor/index.md",
-          "service_toc": "docs-ref-conceptual/advisor/toc.md",
+          "toc_title": "Project Feta",
+          "url_group": "projectfreta",
+          "service_index": "docs-ref-conceptual/projectfreta/index.md",
+          "service_toc": "docs-ref-conceptual/projectfreta/toc.md",
           "swagger_files": [
             {
-              "source": "azure-rest-api-specs/specification/advisor/resource-manager/Microsoft.Advisor/stable/2017-04-19/advisor.json"
+              "source": "azure-freta/services/apim/freta.swagger.json"
             }
           ]
         }

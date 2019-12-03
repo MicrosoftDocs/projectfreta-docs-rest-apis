@@ -4,6 +4,11 @@
          "url":"https://github.com/azure/azure-rest-api-specs",
          "branch":"master",
          "name":"azure-rest-api-specs"
+  },
+  {
+         "url":"https://dev.azure.com/msresearch/Freta/_git/Freta",
+         "branch":"master",
+         "name":"azure-freta"
   }
   ]
 }
