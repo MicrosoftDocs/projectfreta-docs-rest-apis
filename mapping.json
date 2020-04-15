@@ -5,15 +5,11 @@
   "use_service_url_group": true,
   "organizations": [
     {
-      "name": "",
-      "index": "index.md",
-      "default_toc_title": "Getting Started with REST",
     "services": [
 	{
-          "toc_title": "Project Feta",
-          "url_group": "projectfreta",
-          "service_index": "docs-ref-conceptual/projectfreta/index.md",
-          "service_toc": "docs-ref-conceptual/projectfreta/toc.md",
+          "toc_title": "Azure Sphere Public API",
+          "url_group": "azure-sphere",
+          "service_index": "index.md",
           "swagger_files": [
             {
               "source": "azure-freta/services/apim/freta.swagger.json"
