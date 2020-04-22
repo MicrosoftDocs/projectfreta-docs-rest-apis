@@ -7,8 +7,8 @@
     {
     "services": [
 	{
-          "toc_title": "Azure Sphere Public API",
-          "url_group": "azure-sphere",
+          "toc_title": "Project Freta",
+          "url_group": "project freta",
           "service_index": "index.md",
           "swagger_files": [
             {
