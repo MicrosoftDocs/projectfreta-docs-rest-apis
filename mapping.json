@@ -12,7 +12,8 @@
           "service_index": "index.md",
           "swagger_files": [
             {
-              "source": "azure-freta/services/apim/freta.swagger.json"
+              "source": "azure-freta/services/apim/freta.swagger.json",
+			  "sub_group_toc_title": "Project Freta"
             }
           ]
         }
