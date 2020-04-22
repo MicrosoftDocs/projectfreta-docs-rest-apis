@@ -3,7 +3,7 @@
     {
       "docset_name": "projectfreta-docs-rest-apis",
       "build_source_folder": ".",
-      "build_output_subfolder": "azure",
+      "build_output_subfolder": "azureprojectfreta",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

@@ -1,11 +1,11 @@
 {
   "build": {
     "content": [
-	{
+      {
         "src": "docs-ref-autogen",
         "files": [
           "**.yml",
-		  "**.md"
+          "**.md"
         ],
         "exclude": [
           "toc.md"
@@ -17,64 +17,20 @@
         "files": [
           "toc.md"
         ],
-        "exclude": [
-		],
-        "dest": "api/projectfreta"
+        "exclude": [],
+        "dest": "api/project-freta"
       },
       {
         "src": ".",
         "files": [
           "index.md"
         ],
-		"dest": "api/projectfreta"
-      },
-	  {
-        "src":"docs-ref-conceptual",
-        "files": [
-          "**.md"
-        ],
-        "exclude": [
-          "**/toc.md",
-          "mobile-engagement/**.md"
-        ],
-        "dest":"api"
-      },
-      {
-        "files": [
-          "*.md",
-          "toc.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "rest/**"
-        ]
-      },
-      {
-        "files": [
-          "breadcrumb/toc.yml"
-        ]
+        "dest": "api/project-freta"
       }
     ],
-    "resource": [
-	{
-	"src":"docs-ref-conceptual",
-      "files": [
-        "**.png",
-        "**.jpg"
-      ],
-	  "dest":"api"
-    }
-	],
-    "overwrite": [
-      {
-        "files": [
-          "docs-ref-overwrite/**.md"
-		  ]
-      }
-    ], 
     "externalReference": [],
     "globalMetadata": {
-	"enable_rest_try_it": true,
+      "enable_rest_try_it": true,
       "rest_product": "Azure",
       "_gitContribute": {
         "apiSpecFolder": "docs-ref-overwrite"
@@ -82,19 +38,22 @@
       "_mockServerUrl": "https://apiexproxy.azurewebsites.net/svc",
       "_mockServerAuthorization": "Bearer {token:https://graph.windows.net/}",
       "breadcrumb_path": "~/breadcrumb/toc.yml",
-      "rest_product": "projectfreta",
-      "titleSuffix": "projectfreta REST API",
-	  "author":"v-jutao",
-	  "ms.author":"v-jutao",
-	  "ms.topic":"reference",
-	  "ms.devlang":"rest-apis",
-	  "ms.date":"11/20/2019",
+      "rest_product": "project-freta",
+      "titleSuffix": "Azure Project Freta REST API",
+      "author": "v-jutao",
+      "ms.author": "v-jutao",
+      "ms.topic": "reference",
+      "ms.devlang": "rest-apis",
+      "ms.date": "04/22/2020",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {
       "searchScope": {
-        "structured/**.yml": ["projectfreta", "REST"]
+        "structured/**.yml": [
+          "azure-sphere",
+          "REST"
+        ]
       }
     },
     "template": [],
